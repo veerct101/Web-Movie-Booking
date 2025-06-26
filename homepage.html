@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <style>
+        body {
+            background-image: url(regbg6.webp);
+            background-size: 3000px;
+        }
+        #titlebox {
+            height: 70px;
+            background-color: #46546d;  
+            display: flex;
+            align-items: center;
+            font-size: 27px;
+            font-weight: 550;
+        }
+        #mainpage {
+            margin-top: 60px;
+            padding-left: 30px;
+        }
+        .movie-container {
+            display: inline-block;
+            text-align: center;
+            margin-left: 134px;
+            background-color: #7d85ef;
+        }
+        .movie-container img {
+            display: block;
+           
+            margin-top: -15px ;
+           
+        }
+        #registerbtn, #bookbtn {
+            color: white;
+            align-items: center;
+            font-size: 27px;
+            cursor: pointer;
+            font-weight: 550;
+        }
+        .register-btn:hover, .book-btn:hover {
+            background-color: #d63b00;
+        }
+
+        .filter{
+           font-size: 40px;
+           color: #91f191;
+           margin-left: 590px;
+        }
+
+
+        p{
+            font-size: 23px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        
+        @keyframes glowing {
+            0% { text-shadow: 0 0 8px #ff0000, 0 0 20px #ff0000; }
+    25% { text-shadow: 0 0 8px #ff9900, 0 0 20px #ff9900; }
+    50% { text-shadow: 0 0 8px #00ff00, 0 0 20px #00ff00; }
+    75% { text-shadow: 0 0 8px #00ffff, 0 0 20px #00ffff; }
+    100% { text-shadow: 0 0 8px #ff00ff, 0 0 20px #ff00ff; }
+}
+
+.text {
+    color: yellow;
+    font-size: 24px;
+    font-weight: bold;
+    animation: glowing 1.5s infinite alternate;
+    margin-left: 300px;
+}
+
+        
+    </style>
+</head>
+<body>
+    
+    <div id="titlebox">
+        <a href="#"> <div class="text">Home</div> </a>
+        <div  class=text onclick="registerUser()" id = "registerbtn">Register</div>
+        <div class="text" onclick="fun()" id = "bookbtn">Booking</div>
+    </div>
+    <hr>
+    <div id="mainpage">
+        <font  class= "filter">Trending Movies</font><br><br>
+        <div class="movie-container">
+            <img src="darkknight.webp" height="350px" width="300px" style="padding-top: 15px;">
+            <p>The Dark Knight</p>
+        </div>
+        <div class="movie-container">
+            <img src="avengerend.jpg" height="350px" width="300px">
+            <p>Avengers: Endgame</p>
+        </div>
+
+        <div class="movie-container">
+            <img src="ironman.webp" height="350px" width="300px">
+            <p>Iron Man</p>
+        </div>
+    </div>
+    <br><br>
+<hr>
+    <div id="mainpage">
+        <font class= "filter">New Movies</font> <br><br>
+        <br>
+        <div class="movie-container">
+            <img src="oppenheimer.jpg" height="350px" width="300px" style="padding-top: 15px;">
+            <p>Oppenheimer</p>
+        </div>
+
+        <div class="movie-container">
+            <img src="traintobusan.jpg" height="350px" width="300px">
+            <p>Train To Busa</p>
+        </div>
+
+        <div class="movie-container">
+            <img src="spiderman.jpeg" height="350px" width="300px">
+            <p>Spiderman</p>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+    <div id="mainpage">
+       <font class = "filter">Most Rated</font><br><br>
+        <div class="movie-container">
+            <img src="chichore.jpg" height="350px" width="300px" style="padding-top: 15px;">
+            <p>Chichore</p>
+        </div>
+
+        <div class="movie-container">
+            <img src="sikandarposter.avif" height="350px" width="300px">
+            <p>Sikandar</p>
+        </div>
+
+        <div class="movie-container">
+            <img src="chhaavaposter.avif" height="350px" width="300px">
+            <p>Chhaava</p>
+        </div>
+    </div>
+    
+</body>
+
+<script>
+    
+    function registerUser() {
+        window.location.href = 'registrationpage.html'  
+    }
+
+    function fun() {
+        if (sessionStorage.getItem("isRegistered") === "true") {
+            window.location.href = 'bookingpage.html';
+        } else {
+            alert("You must register first before booking a seat.");
+            window.location.href = 'registrationpage.html';
+        }
+    }
+    
+</script>
+
+</html>

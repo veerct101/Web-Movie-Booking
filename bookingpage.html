@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <style>
+        body {
+            background-image: url('bgbook2.jpg');
+            color: white;
+            size: 3000px;
+        }
+        #titlebox {
+            height: 70px;
+            background-color: #46546d;
+            padding-left: 30px;
+            display: flex;
+            align-items: center;
+            font-size: 25px;
+            font-weight: 500;
+        }
+        #mainpage {
+            margin-top: 60px;
+            padding-left: 30px;
+        }
+        .movie-container {
+            display: inline-block;
+            text-align: center;
+            margin-left: 130px;
+        }
+        .movie-container img {
+            display: block;
+            margin: 0 auto;
+        }
+        .movie-container button {
+            background-color: #ff4500;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px;
+            width: 80px;
+        }
+        .movie-container button:hover {
+            background-color: #c63902;
+        }
+
+        p{
+            color: lightgreen;
+            font-size: 25px;
+            display: inline;
+        }
+        .prize p{
+            color: skyblue;
+            margin-left: 500px;
+            font-size: 27px;
+        }
+
+        button{
+            display:inline;
+            margin-top: 20px;
+        }
+
+        @keyframes glowing {
+            0% { text-shadow: 0 0 8px #ff0000, 0 0 20px #ff0000; }
+    25% { text-shadow: 0 0 8px #ff9900, 0 0 20px #ff9900; }
+    50% { text-shadow: 0 0 8px #00ff00, 0 0 20px #00ff00; }
+    75% { text-shadow: 0 0 8px #00ffff, 0 0 20px #00ffff; }
+    100% { text-shadow: 0 0 8px #ff00ff, 0 0 20px #ff00ff; }
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.text {
+    color: yellow;
+    font-size: 24px;
+    font-weight: bold;
+    animation: glowing 1.5s infinite alternate;
+    margin-left: 300px;
+}
+
+.filter{
+    font-size: 35px;
+    color: rgb(254, 65, 65);
+    padding-left: 670px;
+}
+
+.para{
+    font-size: 23px;
+    margin-top: 20px;
+    color: lightgreen;
+}
+
+.text:hover{
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    
+    <div id="titlebox">
+        <div class="text" onclick="fun()" id = "homebtn">Home</div>
+        <div class=text onclick="registerUser()" id = "registerbtn">Register</div>
+        <a href = "#"><div class="text">Book</div></a> 
+    </div>
+    <hr>
+    <div id="mainpage">
+        <div class ="prize"><p>Silver:150&nbsp;&nbsp;&nbsp;&nbsp;Gold:200&nbsp;&nbsp;&nbsp;&nbsp;Platinum:250</p></div>
+        <font class = "filter">Screen 1</font><br>
+        <div class="movie-container">
+            <img src="ironman.webp" height="350px" width="300px">
+            <p class = "para">Iron Man<br>
+                Time : 9 am to 12pm</p><br>
+            <button onclick="window.location.href='screen11.html'">Book</button>
+        </div>
+
+        <div class="movie-container">
+            <img src="traintobusan.jpg" height="350px" width="300px">
+            <p class = "para">Train To Busa<br>
+                Time : 12:30 pm to 3:30 pm</p><br>
+            <button onclick="window.location.href='screen12.html'">Book</button>
+        </div>
+
+        <div class="movie-container">
+            <img src="chichore.jpg" height="350px" width="300px" style="padding-top: 15px;">
+            <p class = "para">Chichore<br>
+                Time : 4 pm to 7 pm</p><br>
+            <button onclick="window.location.href='screen13.html'">Book</button>
+        </div>
+
+       
+
+    </div><br><br>
+<hr>
+    <div id="mainpage">
+        <div class ="prize"><p>Silver:150&nbsp;&nbsp;&nbsp;&nbsp;Gold:200&nbsp;&nbsp;&nbsp;&nbsp;Platinum:250</p></div>
+        <font class= "filter">Screen 2</font> <br>
+        <div class="movie-container">
+            <img src="avengerend.jpg" height="350px" width="300px">
+            <p class = "para">Avengers: Endgame<br>
+                Time:10 am to 1 pm</p><br>
+            <button onclick="window.location.href='screen21.html'">Book</button>
+        </div>
+
+        <div class="movie-container">
+            <img src="sikandarposter.avif" height="350px" width="300px">
+            <p class = "para">Sikandar<br>
+                Time:1:30 pm to 4:30 pm</p><br>
+            <button onclick="window.location.href='screen22.html'">Book</button>
+        </div>
+
+
+        <div class="movie-container">
+            <img src="oppenheimer.jpg" height="350px" width="300px" style="padding-top: 15px;">
+            <p class = "para">Oppenheimer<br>
+                Time:5 pm to 8 pm</p><br>
+            <button onclick="window.location.href='screen23.html'">Book</button>
+        </div>
+
+        
+
+       
+    </div>
+    <br><br>
+    <hr>
+    <div id="mainpage"
+    <div class ="prize"><p>Silver:150&nbsp;&nbsp;&nbsp;&nbsp;Gold:200&nbsp;&nbsp;&nbsp;&nbsp;Platinum:250</p></div>>
+       <font class = "filter">Screen 3</font><br><br>
+       
+       <div class="movie-container">
+        <img src="darkknight.webp" height="350px" width="300px" style="padding-top: 15px;">
+        <p class = "para">The Dark Knight<br>
+            Time:11 am to 2 pm</p><br>
+        <button onclick="window.location.href='screen31.html'">Book</button>
+    </div>
+   
+    <div class="movie-container">
+        <img src="spiderman.jpeg" height="350px" width="300px">
+        <p class = "para">Spiderman<br>
+            Time:2:30 pm to 5 pm</p><br>
+        <button onclick="window.location.href='screen32.html'">Book</button>
+    </div>
+
+        <div class="movie-container">
+            <img src="chhaavaposter.avif" height="350px" width="300px">
+            <p class = "para">Chhaava<br>
+                Time:5:30 pm to 8:30 pm</p><br>
+            <button onclick="window.location.href='screen33.html'">Book</button>
+        </div>
+    </div>
+    
+</body>
+
+<script>
+    
+    function registerUser() {
+        window.location.href = 'registrationpage.html'  
+    }
+
+    function fun() {
+        window.location.href = 'homepage.html';
+        }
+    
+</script>
+
+
+</html>
